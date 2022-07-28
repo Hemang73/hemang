@@ -1,0 +1,29 @@
+(1)	The colum with name of fees is added to table name student_detail, Whose comand was given below?
+Ans.=>	ALTER TABLE Student_Detail ADD fees int
+
+(2)	The colum with name of course is added after colum fees, whose command was given below?
+Ans.=>	ALTER TABLE student_detail ADD course varchar (255) after fess
+
+(3)	The data of 5 students were inetrested into table with name of student detail, whose commands are given below?
+Ans.=>	INSERT INTO student_detail(id,name,surname,city,email,mobile,fess,course) VALUES('1','hemang','joshi','rajkot','hemangjoshi9428206524@gmail.com','8799100593','3000','software testing')
+	//this command wasused for other four students details to insert into table
+
+(4)	The row number 5th was updated by the help of following, whose commands are given below?
+Ans.=>	UPDATE student_detail set course='php' WHERE id='5'
+
+(5)	The row number 4th was deleted by the help of following, whose commands are given below?
+Ans.=>	DELETE FROM student_detail WHERE id='4'
+
+(6)	The student detail is arranges by the defending order, this operation is done by following command?
+Ans.=>	SELECT * FROM student_detail ORDER BY fess DESC
+
+(7)	The New Table With Name Of Grade Is Created By The Help Of Following Command?
+Ans.=>	CREATE TABLE Grade(pid INT PRIMARY KEY AUTO_INCREMENT,grade varchar(255),marks varchar(255))
+
+(8)	The values inserted into table grade by following command?
+Ans.=>	INSERT INTO grade(id,grade,marks) VALUES ('1','A','70'),('2','C','50')
+
+(9)	Table with name student_detail is joined to grade by the reference of id?
+Ans.=>	SELECT * FROM grade JOIN student_detail ON grade.id=student_detail.id
+
+ 
